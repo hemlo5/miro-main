@@ -1,8 +1,11 @@
 import { motion } from 'motion/react';
+import { SEO } from '../components/SEO';
 
 export default function Support() {
   return (
-    <div className="min-h-screen bg-black text-white pt-32 pb-20 px-6">
+    <>
+      <SEO title="Support & FAQ | HEMLO" description="Get help with Hemlo and read our frequently asked questions." path="/support" />
+      <div className="min-h-screen bg-black text-white pt-32 pb-20 px-6">
       <div className="max-w-4xl mx-auto">
         <motion.h1 
           initial={{ opacity: 0, y: 20 }}
@@ -66,5 +69,6 @@ export default function Support() {
         </div>
       </div>
     </div>
+    </>
   );
 }

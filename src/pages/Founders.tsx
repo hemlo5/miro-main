@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+import { SEO } from '../components/SEO';
 
 const story = [
   {
@@ -29,7 +30,9 @@ const story = [
 
 export default function Founders() {
   return (
-    <div className="min-h-screen bg-black text-white pt-32 pb-24 px-6">
+    <>
+      <SEO title="Founder | HEMLO" description="Meet the mind behind Hemlo." path="/founders" />
+      <div className="min-h-screen bg-black text-white pt-32 pb-24 px-6">
       <div className="max-w-4xl mx-auto">
 
         {/* Header */}
@@ -120,5 +123,6 @@ export default function Founders() {
 
       </div>
     </div>
+    </>
   );
 }
