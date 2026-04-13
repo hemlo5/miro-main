@@ -19,20 +19,20 @@ export default function Vision() {
           className="prose prose-invert prose-lg max-w-none"
         >
           <p className="text-2xl text-white/80 leading-relaxed mb-8">
-            We are building the foundational layer for the next generation of human-computer interaction. Our goal is to make advanced AI systems accessible, intuitive, and deeply integrated into everyday workflows.
+            We believe the future shouldn't be a guessing game. By leveraging the power of massively parallel LLMs, we are building a cognitive engine that synthesizes the noise of the world into clear, actionable probability.
           </p>
           
           <div className="grid md:grid-cols-2 gap-12 mt-16">
             <div>
               <h3 className="text-2xl font-bold mb-4">The Problem</h3>
               <p className="text-white/60 leading-relaxed">
-                Current systems are fragmented and require users to adapt to the machine. The cognitive load of managing multiple tools and contexts prevents true creative flow.
+                Human consensus is fundamentally flawed. In traditional prediction markets and intelligence gathering, the loudest voices or highest capital dictate the supposed "truth". Single-prompt AI outputs are equally prone to hallucination and inherent bias.
               </p>
             </div>
             <div>
-              <h3 className="text-2xl font-bold mb-4">The Solution</h3>
+              <h3 className="text-2xl font-bold mb-4">The Ethics & Solution</h3>
               <p className="text-white/60 leading-relaxed">
-                A unified, context-aware environment that anticipates needs and acts as a true collaborative partner, not just a tool.
+                We are committed to transparent, unbiased data processing. Our models are deliberately separated into Generators and Critics, forcing a rigorous battle-testing of every outcome specifically to combat inherent model bias and provide the most objective truth possible.
               </p>
             </div>
           </div>

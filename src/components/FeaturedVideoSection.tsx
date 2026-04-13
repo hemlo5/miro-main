@@ -13,30 +13,30 @@ export default function FeaturedVideoSection() {
           initial={{ opacity: 0, y: 60 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 60 }}
           transition={{ duration: 0.9 }}
-          className="relative rounded-3xl overflow-hidden h-[75vh] md:h-[80vh] w-full"
+          className="relative rounded-3xl overflow-hidden h-[75vh] md:h-[80vh] w-full border border-slate-200 shadow-xl"
         >
-          <NeuralNetwork className="absolute inset-0 w-full h-full bg-white" />
-          <div className="absolute inset-0 bg-gradient-to-t from-white/90 via-white/40 to-transparent pointer-events-none" />
-          
-          <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10 flex flex-col md:flex-row md:items-end justify-between gap-6">
-            <div className="bg-white/80 backdrop-blur-md border border-slate-200 rounded-2xl p-6 md:p-8 max-w-md shadow-xl">
-              <div className="text-slate-500 text-xs tracking-widest uppercase mb-3 font-semibold">
-                OUR APPROACH
-              </div>
-              <p className="text-slate-800 text-sm md:text-base leading-relaxed">
-                We believe in the power of curiosity-driven exploration. Every project starts with a question, and every answer opens a new door to innovation.
-              </p>
+          {/* Mirofish-style panel header */}
+          <div className="absolute top-0 left-0 right-0 z-10 flex items-center justify-between px-5 py-3 bg-white border-b border-slate-200">
+            <span className="text-slate-700 text-sm font-semibold font-sans">Graph Relationship Visualization</span>
+            <div className="flex items-center gap-3">
+              <span className="text-xs text-slate-400 font-mono bg-slate-100 px-2 py-1 rounded">Graph</span>
+              <span className="text-xs text-emerald-600 font-semibold">● Simulating</span>
             </div>
-            
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-slate-900 hover:bg-slate-800 rounded-full px-8 py-3 text-white text-sm font-medium self-start md:self-auto shadow-lg transition-colors"
-            >
-              Explore more
-            </motion.button>
           </div>
+
+          {/* Graph canvas — starts below the header */}
+          <NeuralNetwork className="absolute inset-0 top-[43px] w-full h-[calc(100%-43px)] bg-white" />
         </motion.div>
+
+        {/* Caption below */}
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          transition={{ duration: 0.7, delay: 0.3 }}
+          className="text-white/40 text-sm mt-5 text-center tracking-wide"
+        >
+          Live entity-relationship graph — powered by the Mirofish simulation engine
+        </motion.p>
       </div>
     </section>
   );

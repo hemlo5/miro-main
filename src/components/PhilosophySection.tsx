@@ -2,10 +2,7 @@ import { useRef } from 'react';
 import { motion, useInView } from 'motion/react';
 
 const PolymarketLogo = ({ className }: { className?: string }) => (
-  <svg viewBox="0 0 200 200" className={className} fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="100" cy="100" r="100" fill="#2D74FF"/>
-    <path d="M85 50h30c27.6 0 50 22.4 50 50s-22.4 50-50 50h-10v30h-20V50zm20 80c16.6 0 30-13.4 30-30s-13.4-30-30-30h-10v60h10z" fill="white"/>
-  </svg>
+  <img src="/polymarket.webp" alt="Polymarket Logo" className={className} />
 );
 
 const NewsLogo = ({ className }: { className?: string }) => (
